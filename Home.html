@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FILMSTRIP's TUTORIAL</title>
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="Home.css">
+  </head>
+<body>
+
+      <nav>
+        <div class="navbar" >FilmStrip's Tutorial</div>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+
+            <li><a href="Start here.html">Start here</a></li>
+          </ul>
+      </nav>
+      <section>
+         <div  class="Home-Title">
+          <h1 >Filmmaking</h1>
+          <p>Filmmaking is a way of telling a story. It can have different purposes, such as entertaining, inspiring or educating. 
+            <br>The cast, the plot, the lightning and the audio editing are all aspects of filmmaking. 
+            These aspects, along with many <br>more, are used to create a compelling story that impacts the audience.</p>
+          <p>You can read the script of the film or someone can explain the film to you. 
+            However, no other method of storytelling <br>will impact you as much as a film can.</p>
+            <img src="film1.webp">
+          </section>
+          <article>
+          <h2>How to Edit a Film?</h2>
+          <p>The elements of filmmaking—such as script, direction, cinematography, sound, editing, 
+            and production design <br>are crucial because they collectively shape the narrative and emotional impact of a film.
+            A strong script provides <br>the foundation for storytelling, while direction brings the vision to life, guiding actors and crew.
+             Cinematography <br>sets the visual tone, influencing how audiences perceive the story, and sound design enhances the atmosphere <br>and emotional cues. 
+            Editing shapes the films rhythm and pace, making it cohesive, while production design creates <br>the world in which the story unfolds. 
+            Together, these elements ensure that a film is immersive, coherent, and <br>compelling, engaging the audience on multiple sensory and intellectual levels.</p>
+            <p>In this website we will focus on editing your film to make it better.</p>
+            </article>
+            <div class="video-1">
+              <h2>Filmmaking Tutorials</h2>
+              <div class="row">
+                <div class="col">
+                  <div class="feature-img">
+                    <img src="Screenshot_20241126-034017.jpg" width="150%">
+                    <img src="play button.png" class="play-btn" onclick="playvideo('The Truth About Filmmaking!6.mp4')">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="Screenshot_20241126-034111.jpg">
+                      <img src="play button.png" class="play-btn-1"onclick="playvideo('How to Learn Filmmaking FAST! - Without Film School3.mp4')">
+                    </div>
+                    <p>How to Learn Filmmaking FAST! <br>Without Film School</p>
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="Screenshot_20241126-035118.jpg">
+                      <img src="play button.png" class="play-btn-1" onclick="playvideo('MASTER camera settings FAST for BETTER VIDEO!4.mp4')">
+                    </div>
+                    <p>Master camera settings fast for better video</p>
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="Screenshot_20241126-035341.jpg">
+                      <img src="play button.png" class="play-btn-1" onclick="playvideo('Mastering Composition + Cinematography with Will Smith5.mp4')">
+                    </div>
+                    <p>Master Composition and Cinematography with Will Smith</p>
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="Screenshot_20241126-035815.jpg">
+                      <img src="play button.png" class="play-btn-1" onclick="playvideo('8 Steps to Cinematic Lighting _ Tomorrow s Filmmakers2.mp4')">
+                    </div>
+                    <p>8 Steps to Cinematic Lighting</p>
+                  </div>
+                  <div class="small-img-row">
+                    <div class="small-img">
+                      <img src="Screenshot_20241126-035631.jpg">
+                      <img src="play button.png" class="play-btn-1" onclick="playvideo('8 Steps to Cinematic Composition _ Tomorrow s Filmmakers1.mp4')">
+                    </div>
+                    <p>8 Steps to Cinematic Composition</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="video-player" id="VideoPlayer">
+            <video width="100%" controls id="MyVideo">
+              <source src="The Truth About Filmmaking!.mp4" type="video/mp4">
+            </video>
+            <img src="Close button.png" class="close-btn" onclick="stopvideo()">
+          </div>
+
+
+
+
+
+          <script>
+            var VideoPlayer = document.getElementById("VideoPlayer");
+            var MyVideo = document.getElementById("MyVideo");
+
+            function stopvideo(){
+              VideoPlayer.style.display = "none";
+            }
+
+            function playvideo(file){
+              MyVideo.src = file;
+              VideoPlayer.style.display = "block";
+            }
+          </script>
+
+
+
+</body>
+</html>
